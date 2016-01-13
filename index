@@ -18,8 +18,10 @@ th, td {
 <title>Settlement Scenarios</title>
 </head>
 <body>
-<h3><center>Settlement Scenario Calculator<h3></center>
+<h1><center>Settlement Scenario Calculator</h1></center>
 <form name="Trump" method=post>
+<input type="button" value="Calculate" onClick="computeform(this.form)">
+<input type="reset"  value="Reset" onClick="ClearForm(this.form)">
 <table class="table table-striped table-bordered table-condensed">
 <table border=10>
 <tr>
@@ -41,43 +43,31 @@ th, td {
 </table>
 <table class="table table-striped table-bordered table-condensed">
 <table border=10>
-<center><h3>Hypothetical Offers<br>
-Increments to Consider($)<br></h3></center>
+<center><h3>Hypothetical Offers<br></h3></center>
+<text><i>If the offer were increased, what would the net be for the client?</i><text>
+<br><br>Enter Increment($) and click Calculate<br>
 $<input type=text name="Increment" size=10 ></br></div> 
 
 <tr>
-<td>Hypo Total 1 <input type=text name="Gross1" size=10 disabled=disabled td>
-<td><input type=text name="Fees1" size=4 disabled=disabled></td>
-<td><input type=text name="Expenses1" disabled=disabled ></td>
-<td><input type=text name="Lien1" disabled=disabled ></td>
+<td>Hypo Offer 1 $<input type=text name="Gross1" size=10 disabled=disabled td>
 <td>$<input type=text name="Net1" size=10 disabled=disabled ></td>
 </tr>
 
 <tr>
-<td>Hypo Total 2 <input type=text name="Gross2" size=10 disabled=disabled td>
-<td><input type=text name="Fees2" size=4 disabled=disabled></td>
-<td><input type=text name="Expenses2" disabled=disabled ></td>
-<td><input type=text name="Lien2" disabled=disabled ></td>
+<td>Hypo Offer 2 $<input type=text name="Gross2" size=10 disabled=disabled td>
 <td>$<input type=text name="Net2" size=10 disabled=disabled ></td>
 </tr>
 <tr>
-<td>Hypo Total 3 <input type=text name="Gross3" size=10 disabled=disabled td>
-<td><input type=text name="Fees3" size=4 disabled=disabled></td>
-<td><input type=text name="Expenses3" disabled=disabled ></td>
-<td><input type=text name="Lien3" disabled=disabled ></td>
+<td>Hypo Offer 3 $<input type=text name="Gross3" size=10 disabled=disabled td>
 <td>$<input type=text name="Net3" size=10 disabled=disabled ></td>
 </tr>
 
 <tr>
-<td>Hypo Total 4 <input type=text name="Gross4" size=10 disabled=disabled td>
-<td><input type=text name="Fees4" size=4 disabled=disabled></td>
-<td><input type=text name="Expenses4" disabled=disabled ></td>
-<td><input type=text name="Lien4" disabled=disabled ></td>
+<td>Hypo Offer 4 $<input type=text name="Gross4" size=10 disabled=disabled td>
 <td>$<input type=text name="Net4" size=10 disabled=disabled ></td>
 </tr>
 
-<input type="button" value="Calculate" onClick="computeform(this.form)">
-<input type="reset"  value="Reset" onClick="ClearForm(this.form)">
+
 </form>
 </table>
 
@@ -133,6 +123,8 @@ function computeform(form) {
 }
 
 </script>
+<br><br>
+Built by Gabe Teninbaum.  Please send any suggestions, edits, advice or corrections to me by clicking here<a=href"gabe@lawlab.io".
 </body>
 </html>
 
