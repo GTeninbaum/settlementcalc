@@ -1,11 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style media="screen" type="text/css">
-table {
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<style media="screen" type="text/css">table {
   border-collapse: collapse;
   width: 60%;
 }
@@ -14,65 +12,93 @@ th, td {
   text-align: center;
   border: 5px solid #ccc;
 }
-</style>
-<title>Settlement Scenarios</title>
+	</style>
+	<title>Settlement Scenarios</title>
 </head>
 <body>
-<h1><center>Settlement Scenario Calculator</h1></center>
-<form name="Trump" method=post>
-<input type="button" value="Calculate" onClick="computeform(this.form)">
-<input type="reset"  value="Reset" onClick="ClearForm(this.form)">
+<h1></h1>
+
+<h1 style="text-align: center;"><span style="font-family:georgia,serif;">Personal Injury Settlement Scenario Calculator</span></h1>
+
+<form method="post" name="Trump">
+<p style="text-align: center;"><span style="font-family:georgia,serif;"><em>Purpose: this tool calculates the net settlement a personal injury plaintiff will receive,<br />
+then allows attorneys to analyze various scenarios if the offer</em></span><span style="font-family:georgia,serif;"><em> is increased.</em></span></p>
+
+<p></p>
+
+<p><span style="font-family:georgia,serif;"><input onclick="computeform(this.form)" type="button" value="Calculate" /> <input onclick="ClearForm(this.form)" type="reset" value="Reset" /></span></p>
+
 <table class="table table-striped table-bordered table-condensed">
-<table border=10>
-<tr>
-<td><div align=center>Settlement Offer:</div></td>
-<td><div align=center>Attorney's Fee:</div></td>
-<td><div align=center>Case Expenses:</div></td>
-<td><div align=center>Liens:</div></td>
-<td><div align=center>Net to Client:</div></td>
-
-</tr>
-<tr>
-<td>$<input type=text name="Gross" size=10 onFocus="this.form.Gross.value=''"></td>
-<td><input type=text name="Fees" size=4 onFocus="this.form.Fees.value=''">%</td>
-<td>$<input type=text name="Expenses" size=10 ></td>
-<td>$<input type=text name="Lien" size=10 ></td>
-<td>$<input type=text name="Net" size=10 disabled=disabled ></td>
-</tr>
-<tr>
-</table>
-<table class="table table-striped table-bordered table-condensed">
-<table border=10>
-<center><h3>Hypothetical Offers<br></h3></center>
-<text><i>If the offer were increased, what would the net be for the client?</i><text>
-<br><br>Enter Increment($) and click Calculate<br>
-$<input type=text name="Increment" size=10 ></br></div> 
-
-<tr>
-<td>Hypo Offer 1 $<input type=text name="Gross1" size=10 disabled=disabled td>
-<td>$<input type=text name="Net1" size=10 disabled=disabled ></td>
-</tr>
-
-<tr>
-<td>Hypo Offer 2 $<input type=text name="Gross2" size=10 disabled=disabled td>
-<td>$<input type=text name="Net2" size=10 disabled=disabled ></td>
-</tr>
-<tr>
-<td>Hypo Offer 3 $<input type=text name="Gross3" size=10 disabled=disabled td>
-<td>$<input type=text name="Net3" size=10 disabled=disabled ></td>
-</tr>
-
-<tr>
-<td>Hypo Offer 4 $<input type=text name="Gross4" size=10 disabled=disabled td>
-<td>$<input type=text name="Net4" size=10 disabled=disabled ></td>
-</tr>
-
-
-</form>
 </table>
 
+<table border="10">
+	<tbody>
+		<tr>
+			<td>
+			<div><span style="font-family:georgia,serif;">Settlement Offer:</span></div>
+			</td>
+			<td>
+			<div><span style="font-family:georgia,serif;">Attorney&#39;s Fee:</span></div>
+			</td>
+			<td>
+			<div><span style="font-family:georgia,serif;">Case Expenses:</span></div>
+			</td>
+			<td>
+			<div><span style="font-family:georgia,serif;">Liens:</span></div>
+			</td>
+			<td>
+			<div><span style="font-family:georgia,serif;">Net to Client:</span></div>
+			</td>
+		</tr>
+		<tr>
+			<td><span style="font-family:georgia,serif;">$<input name="Gross" onfocus="this.form.Gross.value=''" size="10" type="text" /></span></td>
+			<td><span style="font-family:georgia,serif;"><input name="Fees" onfocus="this.form.Fees.value=''" size="4" type="text" />%</span></td>
+			<td><span style="font-family:georgia,serif;">$<input name="Expenses" size="10" type="text" /></span></td>
+			<td><span style="font-family:georgia,serif;">$<input name="Lien" size="10" type="text" /></span></td>
+			<td><span style="font-family:georgia,serif;">$<input disabled="disabled" name="Net" size="10" type="text" /></span></td>
+		</tr>
+		<tr>
+		</tr>
+	</tbody>
+</table>
 
-<script type="text/javascript">
+<table class="table table-striped table-bordered table-condensed">
+</table>
+
+<center>
+<h3></h3>
+
+<h2></h2>
+
+<h2><span style="font-family:georgia,serif;">Hypothetical Offers</span></h2>
+</center>
+<text><span style="font-family:georgia,serif;"><i>If the settlement offer identified above was increased, what would the client net?</i></span><text><br />
+<br />
+<span style="font-family:georgia,serif;">Enter an Increment and click &quot;Calculate&quot;<br />
+$<input name="Increment" size="10" type="text" /></span></text></text>
+
+<table border="10">
+	<tbody>
+		<tr>
+			<td><span style="font-family:georgia,serif;">Hypothetical Increased Offer 1 $<input disabled="disabled" name="Gross1" size="10" td="" type="text" /></span></td>
+			<td><span style="font-family:georgia,serif;">Net to Client: $<input disabled="disabled" name="Net1" size="10" type="text" /></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:georgia,serif;">Hypothetical Increased Offer 2 $<input disabled="disabled" name="Gross2" size="10" td="" type="text" /></span></td>
+			<td><span style="font-family:georgia,serif;">Net to Client: $<input disabled="disabled" name="Net2" size="10" type="text" /></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:georgia,serif;">Hypothetical Increased Offer 3 $<input disabled="disabled" name="Gross3" size="10" td="" type="text" /></span></td>
+			<td><span style="font-family:georgia,serif;">Net to Client: $<input disabled="disabled" name="Net3" size="10" type="text" /></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:georgia,serif;">Hypothetical Increased Offer 4 $<input disabled="disabled" name="Gross4" size="10" td="" type="text" /></span></td>
+			<td><span style="font-family:georgia,serif;">Net to Client: $<input disabled="disabled" name="Net4" size="10" type="text" /></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align: center;"><span style="font-family:georgia,serif;"><script type="text/javascript">
 
 function ClearForm(form){
 
@@ -122,9 +148,10 @@ function computeform(form) {
        return;
 }
 
-</script>
-<br><br>
-Built by Gabe Teninbaum.  Please send any suggestions, edits, advice or corrections to me by clicking here<a=href"gabe@lawlab.io".
+</script><br />
+<br />
+Built as a free tool by Prof. Gabe Teninbaum, <a href="http://lawpracticetechnology.blogs.law.suffolk.edu/">Institute on Law Practice Technology &amp; Innovation</a> at <a href="http://www.suffolk.edu/law">Suffolk University Law School</a>.<br />
+Please send any suggestions, comments or corrections <a href="mailto:gteninbaum@suffolk.edu?subject=Settlement%20Calculator">here</a></span><a=href"gabe@lawlab.io". cke:body="">.</a=href"gabe@lawlab.io".></p>
+</form>
 </body>
 </html>
-
